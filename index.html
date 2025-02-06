@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>ToDoList</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header"></header>
+    <main class="main">
+      <h1 class="title__text">To-Do List by Artur K.</h1>
+      <section class="title">
+        <input type="text" class="input__title" id="title__input" placeholder="Add your task...">
+        <button id="push">Push</button>
+      </section>
+      <section class="list">
+        <ul class="list__task" id="tasks">
+          <div class="list__task--default">
+            <img src="./add__task.svg" alt="default">
+            <p class="default__list">Add new tasks in this list...</p>
+          </div>
+        </ul>
+        <ul class="pagination" id="pages"></ul>
+      </section>
+      <section class="filter">
+        <button id="all">All task</button>
+        <button id="active">Active task</button>
+        <button id="completed">Completed task</button>
+      </section>
+      <section class="button">
+        <div class="checkbox__all">
+          <input type="checkbox" id="all__check">
+          <p>Check all</p>
+        </div>
+        <button id="delete">Delete</button>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
