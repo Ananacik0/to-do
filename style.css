@@ -18,14 +18,17 @@
 body {
   background: rgb(0,0,0);
   background: linear-gradient(137deg, rgba(0,0,0,1) 33%, rgba(79,79,79,1) 66%, rgba(149,149,149,1) 100%);
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position:center; */
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container {
-}
+/* .container {
+} */
 
 .main {
   display: flex;
@@ -178,6 +181,14 @@ body {
   font-size: 1.5rem;
 }
 
+.task__input {
+  background: #00000000;
+  color: #fff;
+  outline: none;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
 .task__button {
   display: flex;
   column-gap: .5rem;
@@ -200,5 +211,3 @@ body {
   background: #ffffff;
   cursor: pointer;
 }
-
-/* event.target.nextElementSibling */
